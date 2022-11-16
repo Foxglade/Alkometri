@@ -1,4 +1,5 @@
 import { Button, StyleSheet, Text, TextInput, View, Alert } from 'react-native';
+import {Picker} from '@react-native-picker/picker';
 import { useState, useRef } from 'react';
 import RadioForm from 'react-native-simple-radio-button';
 
@@ -123,7 +124,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.boldText}>Alkometri</Text>
+        <Text style={styles.boldText}>Alkometer</Text>
       </View>
       <View style={styles.smallHeader}>
         <Text style={styles.smallerBoldText}>Weight</Text>
@@ -196,7 +197,7 @@ const styles = StyleSheet.create({
     fontFamily: 'sans-serif',
     fontWeight: 'bold',
     fontSize: 30,
-    color: 'blue',
+    color: 'black',
   },
   smallHeader:{
     padding: 10,
